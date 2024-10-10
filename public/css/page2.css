@@ -1,0 +1,239 @@
+body{
+    background-image: url(../picture2/background-digital.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: scroll;
+
+}
+
+/* content*/
+.content{
+    align-self: center;
+    position: relative;
+    background-color: #f0f0f0;
+    width: 40rem;
+    height: 50rem;
+    margin: auto;
+}
+.headbox{
+    position: absolute;
+    background-color: #2a354b;
+    height: 20%;
+    width: 40rem;
+    margin-top: 0;
+    padding-top:5%;
+   
+}
+.flex-box{
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 22%;
+    left: 5%;
+    padding: 0;
+    list-style: none;
+
+}
+.flex-item{
+    position: relative;
+    background: #f0f0f0;
+    width: 80%;
+   margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.1rem;
+    color: rgb(0, 0, 0);
+    justify-content: left;
+    justify-items: center;
+    text-align: start;
+}
+#silpa {
+    position: absolute;
+    right: 5%;
+    top: 7%;
+
+}
+.right-box{
+    position: absolute;
+    width: 31%;
+    height: 95%;
+    background: #75829c;
+    top: 5%;
+    right: 0;
+    border-radius: 15%;
+    text-align: center;
+    opacity: 0.9;
+
+}
+.button{
+   position: absolute;
+   height: 7%;
+   bottom: 0%;
+    left: 35%;
+
+
+}
+
+
+/* text*/
+table{
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+    vertical-align: bottom;
+    font-size: 3em;
+    color: #f0f0f0 ;
+    
+    
+}
+.headbox::after{
+    content: "";
+    position:absolute;
+    background: linear-gradient(to right, red, rgb(68, 0, 253));
+    width: 36%;
+    height: 1%;
+    bottom: 37%;
+    left:5.5%;
+}
+#header{
+    background-color: #2a354b;
+    padding: 2%;
+    width: 70%;
+    color: #f0f0f0;
+}
+span{
+font-weight: bold;    
+}
+
+/*img*/
+
+#github{
+    border-radius: 15%;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    z-index: 1;
+}
+#korn{
+    border-radius: 15%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+#sil{
+    border-radius: 15%;
+    position: absolute;
+    top: 42%;
+    left: 15%;
+}
+#nt{
+    border-radius: 15%;
+    position: absolute;
+    top: 67%;
+    left: 15%;
+}
+
+/*animation*/
+ #effect2{
+    position: absolute;
+    top: -2.7%;
+    left: -72%;
+    width: 30em;
+    opacity: 0;
+ }
+ #effect3{
+    position: absolute;
+    top: 20%;
+    left: -72%;
+    width: 30em;
+    opacity: 0;
+ }
+ #effect4{
+    position: absolute;
+    top: 44%;
+    left: -72%;
+    width: 30em;opacity: 0;
+
+ }
+ @keyframes spin { 
+    0% { 
+        transform: rotate(360deg);
+    } 
+}
+@keyframes opacity {
+50% {
+    opacity: 0;
+    
+}
+100% {
+    opacity: 1;
+ 
+} 
+}
+@keyframes scale2 {
+    100% {
+         transform: scale(1.2,1.2)
+    }
+}
+@keyframes scale {
+    20% {
+         transform: scale(0.8,0.8)
+    }}
+
+
+
+/* media qurry*/
+@media screen and (max-width:700px) {
+    .content{
+        width: 40rem;
+        height: 35rem;
+        
+    }
+    table{
+        font-size: 2em;
+    }
+    .headbox::after{
+        width: 51%;
+        height: 5%;
+        bottom: 39%;
+        left:5.5%;
+}
+div p{
+    font-size: 0.5em;
+}
+#header{
+    font-size: 1em;
+}
+.right-box{
+width: 350;
+height: 80%;
+top: 12%;
+right: 0%;
+}
+.headbox{
+    width: 100%;
+    height: 10%;
+}
+.flex-box{
+    top: 13%;
+    left: 5%;
+    
+}
+#github{
+    width: 15%;
+    top: 14%;
+}
+.button{
+    position: absolute;
+    height: 7%;
+   bottom: 0%;
+    left: 25%;
+ 
+}
+ }
+

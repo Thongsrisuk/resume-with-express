@@ -1,0 +1,244 @@
+/* Main box */
+body{
+    background-image: url(../picture3/background3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    display: flex;
+
+}
+.content{
+    position: relative;
+    width: 40rem;
+        height: 50rem;
+    background-color: #f0f0f0;
+    align-self: center;
+    justify-self: center;
+  margin: auto;
+  margin-top: 1%;
+}
+.headbox{
+    border: 5px;
+    border-bottom: double rgb(58, 99, 231);
+    padding-top:2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.flex-container{
+    display: flex; 
+    flex-flow: column ;
+    justify-content: space-around;  
+}
+.flex-item{
+    background-color: #bfb9c5;
+  padding-left: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: start;
+    line-height: 1.25rem;
+    font-size: 1.25rem;
+    position: relative;
+  
+    
+}
+.bubble img{
+    width: 50px;
+    animation: bubble 10s linear infinite;
+
+}
+.bubble{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    position: absolute;
+    bottom: -40vh;
+}
+#demopic{
+    width: 2.5rem;
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+}
+.demove1{
+    right: 5%;
+    bottom: 0%;
+}
+.demove2{
+    right: 5%;
+    bottom: 0%;
+}
+.button{
+    position: absolute;
+    left: 40%;
+    z-index: 5;
+}
+
+/* Text */
+p{
+    position: relative;
+}
+strong{
+    font-size: 1.5rem;
+}
+#line::before{
+    content: "";
+    background: linear-gradient(to right ,green, blue);
+    width: 95%;
+    height: 6%;
+    position: absolute;
+    bottom: -10%;  
+}
+#line2::before{
+    content: "";
+    background: linear-gradient(to right ,blue, purple);
+    width: 95%;
+    height: 9%;
+    position: absolute;
+    bottom: -12%;  
+}
+#line3::before{
+    content: "";
+    background: linear-gradient(to right ,purple, green);
+    width: 95%;
+    height: 10%;
+    position: absolute;
+    bottom: -14%;  
+}
+
+    /* Animation */
+@keyframes bubble{
+    0%{transform: translateY(0);
+    opacity: 0;}
+    25%{opacity: 1;}
+    50%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{transform: translateY(-100vh);
+    opacity: 0;}
+}
+.bubble img:nth-child(1){
+    animation-delay: 5s;
+}
+.bubble img:nth-child(2){
+    animation-delay: 2s;
+}
+.bubble img:nth-child(3){
+    animation-delay: 1s;
+}
+.bubble img:nth-child(4){
+    animation-delay: 3s;
+}
+.bubble img:nth-child(5){
+    animation-delay: 7s;
+}
+.bubble img:nth-child(6){
+    animation-delay: 6s;  
+}
+.bubble img:nth-child(7){
+    animation-delay: 4s; 
+}
+@keyframes hidden{
+    2%{opacity: 1;
+    transform: scale(2,2);
+}
+    20%{opacity: 1;
+}
+    40%{opacity: 1;
+}
+    60%{opacity: 1;
+}
+    80%{opacity: 1;
+}
+    100%{opacity: 1;
+}
+}
+div#demo::after{
+    content:"";
+    color: white;
+    background: linear-gradient(to right ,blue, purple);
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    right: 5%;
+    bottom: 5%; 
+}
+div#demo2::after{
+    content: "";
+    color: white;
+    background: linear-gradient(to right ,blue, purple);
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    right: 5%;
+    bottom: 5%; 
+}
+.hidden1{
+    width: 4rem;
+    position: absolute;
+    right: 6.5%;
+    top: 43%;
+    z-index: 1;
+    opacity: 0;
+}
+.hidden2{
+    width: 4rem;
+    position: absolute;
+    top: 64%;
+    right: 6.5%;
+    z-index: 1;
+    opacity: 0;
+}   
+.hidden1:hover{
+    animation: hidden 60s ease-out infinite;
+}
+.hidden2:hover{
+   animation: hidden 60s ease-out infinite;
+}
+
+    /* meadia */
+@media screen and (min-width:100px) and (max-width:700px){
+div.content{
+    width: 40rem;
+    height: 35rem;
+}
+.headbox{
+    font-size: 0.8rem;
+}
+.flex-item{
+    font-size: 0.65rem;
+}
+strong{
+    font-size: 0.7rem;
+}
+
+.hidden1{
+    top: 38%;
+    right: 0;
+}
+.hidden2{
+    top: 63%;
+    right: 0;
+}
+.bubble{
+    bottom: -150vh;
+ }
+ .bubble img{
+    width: 5%;
+ }
+ @keyframes bubble{
+   
+    100%{transform: translateY(-200vh);}
+ }
+ #demopic{
+    width: 1.5rem;
+}
+.button{
+    left: 35%;
+}
+}

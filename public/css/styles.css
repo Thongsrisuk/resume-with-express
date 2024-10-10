@@ -1,0 +1,212 @@
+body{
+    background-image: url(../picture4/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    display: flex;
+    margin: auto;
+}
+.content{
+    position: relative;
+    background-color:rgb(157, 207, 236);
+    width: 40rem;
+    height: 50rem;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 5%;
+}
+.topbox{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 10%;
+}
+.conbox{
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 60%;
+    margin-left: 4%;
+    background-color: blanchedalmond;
+}
+.rightbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    line-height: 2rem;
+   
+    
+}    
+.line img{
+    width: 10%;
+    position: absolute;
+    top: 0%;
+    left: 3.6%;
+    
+}
+.tel img{
+    position: absolute;
+    width: 7%;
+    top: 20%;
+    left: 5%;
+}
+.map img{
+    position: absolute;
+    width: 7%;
+    border-radius: 10%;
+    top: 40%;
+    left: 5%;
+}
+.gmail img{
+    position: absolute;
+    width: 7%;
+    bottom: 30%;
+    left: 5%;
+    
+}
+.github img{
+    position: absolute;
+    width: 7%;
+    border-radius: 10%;
+    bottom: 10%;
+    left: 5%;
+}
+#hide1{
+    position: absolute;
+    bottom:  -10%;
+    left: -15%;
+   
+}
+#b1{
+    position: absolute;
+    bottom: 18%;
+    left: 10%;
+    padding: 2%;
+    font-size: 1.5rem;
+    width: 20%;
+}
+#b2{
+    position: absolute;
+    bottom: 18%;
+    left: 38%;
+    padding: 2%;
+    font-size: 1.5rem;
+    width: 20%;
+}
+#b3{
+    position: absolute;
+    bottom: 16%;
+    right: 10%;
+    padding: 2%;
+    font-size: 1.5rem;
+    width: 20%;
+}
+.m1{
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    width: 10%;
+    animation: mouse 2s ease infinite;
+}
+.m2{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    width: 10%;
+    animation: mouse 2s ease infinite;
+}
+.m3{
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    width: 10%;
+    animation: mouse 2s ease infinite;
+}
+
+/* Text */
+.text{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 5%;
+    top: 82%;
+}
+#Resume{
+   
+    color: wheat;
+    font-size: 5rem;
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+
+}
+.Table{
+    line-height: 1rem;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    font-size: 0.8rem;
+    }
+h1{
+    font-size: 3rem;
+    background:linear-gradient(to top, rgb(56, 143, 194), rgb(57, 3, 100));
+    padding: 5%;
+    margin-top: 0;
+    color: #f0f0f0;
+    border-radius: 5%;
+    margin-bottom: 0;
+}
+h2{
+    font-size: 2rem;
+}
+
+/* Animation */
+@keyframes grow{
+    0%{transform: scale(1,1);}
+    50%{transform: scale(1.25,1.25);}
+    100%{transform: scale(1.5,1.5);}
+   }
+@keyframes mouse{
+    0%{transform: scale(1,1);}
+    50%{transform: scale(1.25,1.25);}
+    100%{transform: scale(1,1);}
+   }
+#hide1:hover{
+    animation: grow 5s linear infinite;
+}
+
+/* media */
+@media screen and (min-width:100px) and (max-width:1000px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    table tr th{
+font-size: 0.5rem;
+height: 2.3rem;
+    }
+    .conbox{
+        width: 90%;
+        height: 55%;
+    }
+    .content{
+        width: 40rem;
+        height: 35rem;
+    }
+    button{
+        height: max-content;
+        width: max-content;
+    }
+
+}
